@@ -1,1 +1,11 @@
-What is the total price of all products in the dataset ? =SUM(G2:G35)
+What is the total price of all products in the dataset? =SUM(G2:G35)
+How many products are there in the dataset?  =COUNT(select Range)
+Calculate the average price of the products. =AVERAGE(select Range)
+Determine the mimimum price among all products. =MIN(select Range)
+Find the maximum price among all products. =MAX(select Range)
+Using an IF function, create a new column named price Range to categorize products with a price greater than or equal to $500 as High orice and others as Standard price.   =IF(G2<500,"High Price","Standard Price")
+Calculate the total price for products in the Electronics category using the SUMIF function. =SUMIF(J2:J35,"Electronics",G2:G35)
+Determine the count of products with a price less than &100 using the COUNTIF function. =COUNTIF(G2:G35,"<100")
+Create a new column named Day with the first 2 characters of each product ID using the LEFT function. Ad column-=LEFT(A2,2)-enter-column drag
+Create a new column named Country code by extracting the last 2 characters from the Product ID column using the RIGHT function. Ad column-=RIGHT(A2,2)-enter-colum drag
+Create a new column named Month by extracting 4th to 6th characters from the Product ID column using the. Ad column-=MID(A2,4,3)-enter-column drag 
